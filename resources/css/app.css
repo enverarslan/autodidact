@@ -1,0 +1,119 @@
+@import "uicons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --background-color: rgb(241, 242, 242);
+}
+
+html{}
+
+body{
+    font-size: 14px;
+    background: var(--background-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.topic .header h2{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.progress{
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid #e5e7eb;
+    top: 0;
+    left: 2rem;
+    z-index: -1;
+}
+
+.topic .description a{
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
+    cursor: pointer;
+}
+.topic .description a:hover{
+    border-style: solid;
+}
+
+.body span:hover{
+    background-color: #fffcef;
+    border-bottom: 1px dotted #fc0;
+}
+.body span:after{
+    content : " ";
+}
+.body p{
+    margin-bottom: .35rem;
+}
+.body a{
+    color: #0366d6;
+    text-decoration: underline;
+}
+
+.body input[type=checkbox]{
+    text-align: center;
+    border: 1px solid #777;
+    border-radius: 2px;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+    right: 0;
+    margin-left: 0;
+}
+.body input[checked]{
+    background: #26ab33;
+    border-color: #26ab33
+}
+
+.body input[checked]::before{
+    content: "✓";
+    line-height: 16px;
+    color: #fff;
+    padding: 0px;
+    top: -2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+    /* CK Editor */
+.ck-editor__editable {
+    min-height: 100px;
+}
+
+.ck-editor ol, .ck-editor ul{
+    padding:0 0 0 2em;
+}
+.ck-editor ol{
+    list-style: decimal;
+}
+.ck-editor ul{
+    list-style: disc;
+}
+
+.ck-editor a {
+    color: #0366d6;
+    text-decoration: underline;
+}
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused{
+    border: 1px solid #737373 !important;
+}
+
+/* Post */
+
