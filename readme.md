@@ -15,9 +15,11 @@
 
 ### TODO
 - [ ] Content edit/delete operations
-- [ ] Popular content calculation algorithm.  
+- [ ] Popular content calculation algorithm
 - [ ] Channels
 - [ ] Rich Media Support
 - [ ] Roles
 - [ ] UI Improvements
 - [ ] Scheduling & Queue
+- [ ] Laravel 9 upgrade
+- [ ] Livewire components
